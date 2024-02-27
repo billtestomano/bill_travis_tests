@@ -8,3 +8,8 @@ before_install:
 script:
 - ruby -e 'puts ENV["MY_ENV"] || "Hello, World!"'
 # - cat test.txt
+jobs:
+  include:
+    - os: osx
+      rvm:
+        - "3.2"
