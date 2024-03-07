@@ -8,9 +8,9 @@ before_install:
 script:
 - ruby -e 'puts ENV["MY_ENV"] || "Hello, World!"'
 # - cat test.txt
-jobs:
-  include:
-    - os: osx
-      osx_image: xcode14.2
-      rvm:
-        - "3.2"
+# jobs:
+#   include:
+#     - os: osx
+#       osx_image: xcode14.2
+#       rvm:
+#         - "3.2"
