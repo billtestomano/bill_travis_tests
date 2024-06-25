@@ -3,8 +3,7 @@ script:
 - ruby -e 'puts ENV["MY_ENV"] || "Hello, World!"'
 deploy:
   provider: pages:git
-  edge:
-    branch: v2.0.3-beta.4
+  edge: true
   token: $gh_token
   on:
     branch: main
