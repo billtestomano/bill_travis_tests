@@ -1,11 +1,10 @@
 language: ruby
 script:
-- sleep 300
 - ruby -e 'puts ENV["MY_ENV"] || "Hello, World!"'
 deploy:
   provider: pages:git
   edge: true
-  token: $gh_token
+  token: $GH-TOKEN
   # dpl_version: 2.0.3.beta.4
   on:
     branch: main
